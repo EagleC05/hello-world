@@ -30,10 +30,7 @@ app.use((request, response, next) => {
         //}
     //})
     response.render("maintence.hbs", {
-        title: "Maintence page",
-        years: new Date().getFullYear(),
-        welcome: "Sorry!"
-    });
+        });
 });
 
 app.get('/', (request, response) => {
