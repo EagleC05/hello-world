@@ -21,7 +21,7 @@ hbs.registerHelper('message', (text) => {
 })
 
 app.set('view engine', 'hbs');
-app.use((request, response, next) => {
+//app.use((request, response, next) => {
     //var time = new Date().toString();
     //var log = `${time}: ${request.method} ${request.url}`;
     //fs.appendFile('server.log', log + '\n', (error) => {
@@ -33,10 +33,10 @@ app.use((request, response, next) => {
 
     //response.render("maintence.hbs", {
         //});
-});
+//});
 
 app.get('/', (request, response) => {
-    response.render({
+    response.render('weather.hbs', {
         name: 'Eagle',
         school: [
             'BCIT',
