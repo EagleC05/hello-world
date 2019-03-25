@@ -29,12 +29,14 @@ app.use((request, response, next) => {
             //console.log('Unable to log message')
         //}
     //})
-    response.render("maintence.hbs", {
-        });
+
+
+    //response.render("maintence.hbs", {
+        //});
 });
 
 app.get('/', (request, response) => {
-    response.render('weather.hbs', {
+    response.render({
         name: 'Eagle',
         school: [
             'BCIT',
